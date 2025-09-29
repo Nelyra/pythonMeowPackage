@@ -37,7 +37,7 @@ jobs:
           uv venv 
           uv sync 
           source .venv/bin/activate
-          uv run pytest -q --cov=donnes_des_sous --cov-report=term-missing --cov-report=lcov
+          uv run pytest -q --cov=meow_package --cov-report=term-missing --cov-report=lcov
           uv build
       - name: Upload distributions
         uses: actions/upload-artifact@v4
